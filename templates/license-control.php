@@ -4,6 +4,9 @@
  *
  * @var $args array
  */
+
+defined( 'ABSPATH' ) || exit; // Wbcom: included by the SDK only; never run on its own.
+
 $name = $args['name'];
 if ( ! empty( $args['type'] ) && 'theme' === $args['type'] ) {
 	$name = wp_get_theme()->get( 'Name' );
