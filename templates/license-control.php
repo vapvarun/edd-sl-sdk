@@ -4,6 +4,11 @@
  *
  * @var $args array
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 $name = $args['name'];
 if ( ! empty( $args['type'] ) && 'theme' === $args['type'] ) {
 	$name = wp_get_theme()->get( 'Name' );
